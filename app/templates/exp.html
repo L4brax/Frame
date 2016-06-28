@@ -1,1 +1,7 @@
-<p>{{msg1}}</p>
+<div ng-repeat="exp in experiences">
+  <h1>{{exp.position}}</h1>
+  <h2>{{exp.company}}</h2>
+  <p>De {{exp.started | date : "MMMM-yyyy"}} à {{exp.ended | date : "MMMM-yyyy"}}</p>
+  <p>Lieu : {{exp.place}}</p>
+  <p>Description : {{exp.description}}</p>
+</div>

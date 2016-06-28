@@ -1,1 +1,6 @@
-<p>{{msg1}}<p>
+<div ng-repeat="path in paths">
+  <h1>{{path.place}}</h1>
+  <h2>{{path.degree}}</h2>
+  <p>De {{path.started | date : "MMMM-yyyy"}} à {{path.ended | date : "MMMM-yyyy"}}</p>
+  <p>Compétences : {{path.discipline}}</p>
+</div>
