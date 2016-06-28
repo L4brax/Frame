@@ -9,6 +9,16 @@
   "author": "antoine.hess",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.7"
-  }
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L4brax/Frame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/L4brax/Frame/issues"
+  },
+  "homepage": "https://github.com/L4brax/Frame#readme"
 }

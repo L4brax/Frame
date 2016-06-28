@@ -1,10 +1,17 @@
-<!doctype HTML>
+<!doctype html>
+<html>
   <head>
-
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
   </head>
   <body ng-app="frame">
     <p><a href="#/">Main</a></p>
-    <p><a href="#"
+    <a href="#parcours">Parcours</a><br>
+    <a href="#experiences">Experiences</a>
+    <div ng-view></div>
 
+    <!-- App scripts -->
+    <script src="app/module.js"></script>
+    <script src="app/controllers.js"></script>
   </body>
 </html>
