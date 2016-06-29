@@ -1,6 +1,7 @@
-<div ng-repeat="path in paths">
-  <h1>{{path.place}}</h1>
-  <h2>{{path.degree}}</h2>
+<div ng-repeat="path in paths" style="margin-top:2%"
+ class="w3-card-2 w3-container w3-leftbar w3-border-green w3-light-grey">
+  <h2>{{path.place}}</h2>
+  <h3>{{path.degree}}</h3>
   <p>De {{path.started | date : "MMMM-yyyy"}} à {{path.ended | date : "MMMM-yyyy"}}</p>
-  <p>Compétences : {{path.discipline}}</p>
+  <p>{{path.discipline}}</p>
 </div>

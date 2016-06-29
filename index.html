@@ -4,14 +4,28 @@
     <meta charset="utf-8">
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 640px) href="app/css/main.css"" /> -->
   </head>
-  <body ng-app="frame">
-    <p><a href="#/">Main</a></p>
-    <a href="#parcours">Parcours</a><br>
-    <a href="#experiences">Experiences</a>
-    <div ng-view></div>
-
+  <body ng-app="frame" class="w3-grey frame-body">
+    <div id="mySidenav" class="w3-sidenav w3-collapse w3-light-grey w3-card-2" style="width:200px;">
+      <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
+      <p><a href="#/">Main</a></p>
+      <a href="#parcours">Item</a>
+      <a href="#experiences">Item</a>
+    </div>
+    <div ng-view class="w3-main w3-container w3-col l6" style="margin-left:200px;">
+    </div>
     <!-- App scripts -->
+    <script>
+      function w3_open() {
+        document.getElementById("mySidenav").style.display = "block";
+      }
+      function w3_close() {
+        document.getElementById("mySidenav").style.display = "none";
+      }
+    </script>
     <script src="app/module.js"></script>
     <script src="app/controllers.js"></script>
   </body>
