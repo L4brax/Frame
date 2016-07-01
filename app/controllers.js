@@ -2,20 +2,6 @@ app.controller("pathCtrl", function($scope, $http){
   $http.get("data/frame.json").then(function(response){
     $scope.paths = response.data.paths;
   });
-  // $scope.paths = [{
-  //   place: "Header1",
-  //   degree : "Header2",
-  //   started : "08-02-2015",
-  //   ended : "08/2015",
-  //   discipline : "Disc1, disc2..."
-  // },
-  // {
-  //   place: "Header1",
-  //   degree : "Header2",
-  //   started : "08-2015",
-  //   ended : "08-2015",
-  //   discipline : "Disc1, disc2..."
-  // }];
 });
 
 app.controller("expCtrl", function($scope){
