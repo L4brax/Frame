@@ -1,7 +1,10 @@
-<div ng-repeat="path in paths" style="margin-top:2%"
- class="w3-card-2 w3-container w3-leftbar w3-border-light-green w3-white">
-  <h2>{{path.place}}</h2>
-  <h3>{{path.degree}}</h3>
-  <p>De {{path.started | date : "MMMM-yyyy"}} à {{path.ended | date : "MMMM-yyyy"}}</p>
-  <p>{{path.discipline}}</p>
+<div class="w3-card-2 w3-container w3-border w3-border-green w3-light-grey w3-animate-top">
+  <h1>{{itemName}}<h1>
+</div>
+<div ng-repeat="cont in itemContent" style="margin-top:2%"
+ class="w3-card-2 w3-container w3-leftbar w3-border-green w3-light-grey w3-animate-left">
+  <h2>{{cont.place}}</h2>
+  <h3>{{cont.degree}}</h3>
+  <p>De {{cont.started | date : "MMMM-yyyy"}} à {{cont.ended | date : "MMMM-yyyy"}}</p>
+  <p>{{cont.discipline}}</p>
 </div>

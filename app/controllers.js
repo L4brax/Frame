@@ -1,24 +1,23 @@
 app.controller("pathCtrl", function($scope, $http){
   $http.get("data/frame.json").then(function(response){
-    $scope.paths = response.data.paths;
+    $scope.paths = response.data.frame;
+  });
+  $http.get("data/main.json").then(function(response){
+    $scope.mainItems = response.data.main;
   });
 });
 
-app.controller("expCtrl", function($scope){
-  $scope.experiences = [{
-    position : "Header1",
-    company : "Header2",
-    started : "04-2015",
-    ended : "08-2015",
-    place : "Place",
-    description : "Lorem ipsum"
-  },
-  {
-    position : "Header1",
-    company : "Header2",
-    started : "04-2016",
-    ended : "07-2015",
-    place : "Place2",
-    description : "Lorem Ipsum"
-  }];
+app.controller("contentCtrl", function($scope, $http, $routeParams){
+  $http.get("data/frame.json").then(function(response){
+    var frameData = response.data.frame;
+    var content = function (frameDataf, routeParams) {
+      for (var i = 0; i < frameDataf.length;i++){
+        if (frameDataf[i].name == routeParams.name) {
+          return frameDataf[i].content;
+        }
+      };
+    }
+    $scope.itemContent = content(frameData,$routeParams);
+    $scope.itemName = $routeParams.name;
+  });
 });

@@ -1,17 +1,51 @@
 {
-  "paths" : [{
-    "place": "Header1",
-    "degree" : "Header2",
-    "started": "08-02-2015",
-    "ended" : "08/2015",
-    "discipline" : "Disc1, disc2..."
-    },
-    {
-    "place": "Header1",
-    "degree" : "Header2",
-    "started" : "08-2015",
-    "ended" : "08-2015",
-    "discipline" : "Disc1, disc2..."
-    }
-  ]
+	"frame": [{
+		"name": "Item1",
+		"content": [{
+			"place": "Header1AA",
+			"degree": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"discipline": "Disc1, disc2..."
+		}, {
+			"place": "Header1AB",
+			"degree": "Header2",
+			"started": "08-2015",
+			"ended": "08-2015",
+			"discipline": "Disc1, disc2..."
+		}]
+	}, {
+		"name": "Item2",
+		"content": [{
+			"place": "Header1BA",
+			"degree": "Header2",
+			"started": "04-2015",
+			"ended": "08-2015",
+			"ok": "Place",
+			"discipline": "Lorem ipsum"
+		}, {
+			"place": "Header1BB",
+			"degree": "Header2",
+			"started": "04-2016",
+			"ended": "07-2015",
+			"ok": "Place2",
+			"discipline": "Lorem Ipsum"
+		}]
+	}, {
+		"name": "Item3",
+		"content": [{
+			"place": "Header1CA",
+			"degree": "Header2",
+			"started": "04-2015",
+			"ended": "08-2015",
+			"ok": "Place",
+			"discipline": "Lorem ipsum"
+		}, {
+			"place": "Header1CB",
+			"degree": "Header2",
+			"started": "04-2016",
+			"ended": "07-2015",
+			"discipline": "Lorem Ipsum"
+		}]
+	}]
 }
