@@ -2,50 +2,102 @@
 	"frame": [{
 		"name": "Item1",
 		"content": [{
-			"place": "Header1AA",
-			"degree": "Header2",
+			"header1": "Header1AA",
+			"header2": "Header2",
 			"started": "08-02-2015",
 			"ended": "08/2015",
-			"discipline": "Disc1, disc2..."
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
 		}, {
-			"place": "Header1AB",
-			"degree": "Header2",
-			"started": "08-2015",
-			"ended": "08-2015",
-			"discipline": "Disc1, disc2..."
+			"header1": "Header1AB",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "Lorem Ipsum",
+			"description2" : "Lorem Ipsum",
+			"note" : "",
+			"comment" : "…tomorrow we will run faster, stretch out our arms farther… And then one fine morning— So we beat on, boats against the current, borne back ceaselessly into the past. ",
+			"link" : "https://www.foo.bar",
+			"img1" : "",
+			"img2" : ""
 		}]
 	}, {
 		"name": "Item2",
 		"content": [{
-			"place": "Header1BA",
-			"degree": "Header2",
-			"started": "04-2015",
-			"ended": "08-2015",
-			"ok": "Place",
-			"discipline": "Lorem ipsum"
+			"header1": "Header1BA",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
 		}, {
-			"place": "Header1BB",
-			"degree": "Header2",
-			"started": "04-2016",
-			"ended": "07-2015",
-			"ok": "Place2",
-			"discipline": "Lorem Ipsum"
+			"header1": "Header1BB",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
 		}]
 	}, {
 		"name": "Item3",
 		"content": [{
-			"place": "Header1CA",
-			"degree": "Header2",
-			"started": "04-2015",
-			"ended": "08-2015",
-			"ok": "Place",
-			"discipline": "Lorem ipsum"
+			"header1": "Header1CA",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
 		}, {
-			"place": "Header1CB",
-			"degree": "Header2",
-			"started": "04-2016",
-			"ended": "07-2015",
-			"discipline": "Lorem Ipsum"
+			"header1": "Header1CB",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
+		}, {
+			"header1": "Header1CC",
+			"header2": "Header2",
+			"started": "08-02-2015",
+			"ended": "08/2015",
+			"place": "Disc1, disc2...",
+			"description1" : "",
+			"description2" : "",
+			"note" : "",
+			"comment" : "",
+			"link" : "",
+			"img1" : "",
+			"img2" : ""
 		}]
 	}]
 }
