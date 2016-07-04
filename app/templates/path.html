@@ -1,10 +1,22 @@
 <div class="w3-card-2 w3-container w3-border w3-border-green w3-light-grey w3-animate-top">
-  <h1>{{itemName}}<h1>
+  <h1 class="w3-navbar">{{itemName}}<h1>
 </div>
 <div ng-repeat="cont in itemContent" style="margin-top:2%"
  class="w3-card-2 w3-container w3-leftbar w3-border-green w3-light-grey w3-animate-left">
-  <h2>{{cont.place}}</h2>
-  <h3>{{cont.degree}}</h3>
-  <p>De {{cont.started | date : "MMMM-yyyy"}} à {{cont.ended | date : "MMMM-yyyy"}}</p>
-  <p>{{cont.discipline}}</p>
+  <h2 ng-if="cont.header1">{{cont.header1}}</h2>
+  <h3 ng-if="cont.header2">{{cont.header2}}</h3>
+  <h4 ng-if="cont.place">{{cont.place}}</h4>
+  <p ng-if="cont.started"><i>De {{cont.started | date : "MMMM-yyyy"}} à {{cont.ended | date : "MMMM-yyyy"}}</i></p>
+  <p ng-if="cont.description1">{{cont.description1}}</p>
+  <p ng-if="cont.description2">{{cont.description2}}</p>
+  <p ng-if="cont.note">{{cont.note}}</p>
+  <p ng-if="cont.comment" class="w3-container w3-card-2 w3-light-green">
+    <span class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true" style="margin-top:7px"></span>{{cont.comment}}
+  </p>
+  <p>
+  <button ng-if="cont.link" class="w3-btn w3-green w3-hover-light-grey w3-round-large"><a href="{{cont.link}}">
+    <i class="fa fa-link fa-lg fa-pull-left" style="margin-top:4px"></i>{{cont.link}}</a></button>
+  </p>
+  <p ng-if="cont.img1">{{cont.img1}}</p>
+  <p ng-if="cont.img2">{{cont.img2}}</p>
 </div>

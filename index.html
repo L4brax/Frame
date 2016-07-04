@@ -12,16 +12,17 @@
     <div id="mySidenav" class="w3-sidenav w3-collapse w3-light-grey w3-card-2" style="width:250px;">
       <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
       <div ng-controller="pathCtrl">
+        <img src="http://www.w3schools.com/w3css/img_avatar3.png" alt="Person" style="width:100%">
         <h2>
           <a href="#/"><i class="fa fa-user w3-text-green"></i> {{mainItems.name}}</a>
         </h2>
         <div ng-repeat="path in paths">
           <a href="#/path/{{path.name}}">{{path.name}}</a>
         </div>
-        <div ng-if="mainItems.github.name">
-          <button class="w3-btn-block w3-tiny w3-green w3-hover-light-grey"><a href="{{mainItems.github.link}}">
-              <i class="fa fa-github"></i>
-              {{mainItems.github.name}}
+        <div ng-if="mainItems.github.name" class="w3-center">
+          <button class="w3-btn w3-light-grey w3-border w3-border-green w3-hover-green w3-round-xxlarge btn-main"><a href="{{mainItems.github.link}}">
+            <i class="fa fa-lg fa-github fa-green" style="color:green;"> </i>
+             {{mainItems.github.name}}
           </a></button>
         </div>
       </div>
