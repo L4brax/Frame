@@ -4,6 +4,7 @@ app.controller("pathCtrl", function($scope, $http){
   });
   $http.get("data/main.json").then(function(response){
     $scope.mainItems = response.data.main;
+    console.log($scope.mainItems.links);
   });
 });
 

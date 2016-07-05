@@ -1,11 +1,20 @@
 {
-  "main": {
-    "name" : "Main",
-    "link" : "Link",
-    "github" : {
-      "name" : "Gitgit",
-      "link" : "https://github.com/L4brax"
-    },
-    "avatar" : "http://www.w3schools.com/w3css/img_avatar3.png"
-  }
+	"main": {
+		"name": "Main",
+		"link1": "",
+		"link2": "",
+		"github": {
+			"name": "Gitgit",
+			"link": "https://github.com/L4brax"
+		},
+		"avatar2": "http://www.w3schools.com/w3css/img_avatar3.png",
+		"avatar": "data/img/TEST.jpg",
+		"links": [{
+			"name": "a1",
+			"link": ""
+		}, {
+			"name": "a2",
+			"link": ""
+		}]
+	}
 }

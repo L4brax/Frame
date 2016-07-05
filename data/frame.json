@@ -12,8 +12,8 @@
 			"note" : "",
 			"comment" : "",
 			"link" : "",
-			"img1" : "",
-			"img2" : ""
+			"img1" : "data/img/item1.png",
+			"img2" : "data/img/TEST.jpg"
 		}, {
 			"header1": "Header1AB",
 			"header2": "Header2",
@@ -55,7 +55,7 @@
 			"comment" : "",
 			"link" : "",
 			"img1" : "",
-			"img2" : ""
+			"img2" : "data/img/TEST.jpg"
 		}]
 	}, {
 		"name": "Item3",
