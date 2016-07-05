@@ -16,8 +16,8 @@ app.controller("contentCtrl", function($scope, $http, $routeParams){
         if (frameDataf[i].name == routeParams.name) {
           return frameDataf[i].content;
         }
-      };
-    }
+      }
+    };
     $scope.itemContent = content(frameData,$routeParams);
     $scope.itemName = $routeParams.name;
   });
