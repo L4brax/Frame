@@ -8,7 +8,17 @@
   }
 }
 
-.btn-main{
-  margin: 10px 0px;
-  padding: 0px 50px 0px 40px;
+.btn-main {
+  margin: 10px 25px;
+  font-size: 20px;
+}
+
+.item-banner {
+  width: 100%;
+  max-height: 120px;
+}
+
+.item-img {
+  width:100%;
+  margin-top:10px;
 }
